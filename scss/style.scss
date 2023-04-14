@@ -1,0 +1,589 @@
+/* ESCENCIAL */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/* AUXILIAR */
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+/* HEADER */
+
+section.header{
+	width: 100%;
+	height: 100px;
+	background-color: #212121;
+
+
+	.container{
+		position: relative;
+	}
+
+
+	.header-logo{
+		width: 100px;
+		height: 100px;
+		background-image: url('../imagens/logo/Logo.png');
+		background-size: contain;
+		float: left;
+	}
+
+	.header-icon{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		position: absolute;
+		right: 2%;
+		top: 50%;
+		transform: translateY(-50%);
+		background-image: url('../imagens/icon/icone-perfil.png');
+		background-size: contain;
+		cursor: pointer;
+		float: right;
+	}
+
+}
+
+/* HEADER 2 */
+
+section.header-menu{
+	width: 100%;
+	padding: 10px 0;
+	min-height: 40px;
+	background-color: #424242;
+
+	.container{max-width: 1380px; position: relative; padding: 0;}
+
+	nav.desktop{
+		float: left;
+
+	ul{
+		list-style-type: none;
+
+	}
+
+	li{
+		display: inline-block;
+		padding: 0 10px;
+		position: relative;
+	}
+
+	}	
+
+	span{
+		min-height: 2px;
+		transition: 0.5s;
+		background-color: white;
+		border-radius: 10px;
+		position: absolute;
+		bottom: 0;
+	
+	}
+
+	li:hover span{
+		padding: 0 10px;
+	}
+
+
+	a{
+		text-decoration: none;
+		color: white;
+	}
+
+	nav.mobile{
+
+		
+		position: relative;
+		display: none;
+	
+		
+
+		h3{
+			position: absolute;
+			left: 10px;
+			top: -2px;
+			color: white;
+			
+
+		}
+
+		i{cursor: pointer;}
+
+		ul{
+			width: 100%;
+			list-style-type: none;
+			position: absolute;
+			top: 32px;
+			text-align: center;
+			display: none;
+			
+		}
+
+		li{
+			cursor: pointer;
+			width: 100%;
+			padding: 10px 0;
+			background-color: #424242;
+			position: relative;
+		}
+
+		span{position: absolute; max-height: 3px; bottom: 7px;}
+
+	}
+
+
+
+
+
+
+
+
+	.header-pesquisa{
+		
+		position: absolute;
+		top: -9px;
+		right: 2.5%;
+	}
+
+	input{
+		width: 250px;
+		height: 30px;
+		margin-top: 4px;
+		padding: 0px 10px;
+		border-radius: 50px;
+		outline: none;
+		border: none;
+	}
+
+	img{
+		max-width: 15px;
+		position: relative;
+		bottom: -3px;
+		right: 5px;
+	}
+}
+
+/* SECTION BG */
+
+section.section-bg{
+
+	width: 100%;
+	height: 325px;
+	background-image: url('../imagens/bg/NIKE.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+/* DIFERENCIAIS */
+
+section.diferenciais{
+	
+	width: 100%;
+	padding: 1% 2%;
+	background-color: #eeeeee;
+	
+
+	.container{display: flex; position: relative;}
+	
+		.diferenciais-single{
+
+
+			width: 120px;
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+			padding: 55px 2%;		
+
+
+
+		}
+
+			h3{
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				transform: translateX(-50%);
+				cursor: pointer;
+				
+
+
+
+			}
+			img{
+				
+				
+				top: 0px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				max-width: 60px; 
+				position: absolute;
+				cursor: pointer;
+
+			}
+
+
+}
+
+/* destaque */
+
+section.destaque{
+
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 2%;
+	display: flex;
+
+
+	.texto{
+
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+
+
+	h2{
+		text-align: center;
+	}
+
+	i{
+		transition: 1s;
+		height: 39px;
+	}
+
+	}
+
+	.destaque-box{
+		width: 100%;
+		padding: 20px 20px;
+		text-align: center;
+
+		.box-single{
+			width: 200px;
+			height: 300px;
+			background-color: black;
+			border-radius: 20px;
+			position: relative;
+			color: white;
+			cursor: pointer;
+			text-align: center;
+			transition: 0.5s;
+			text-align: center;
+			display: inline-block;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+
+
+
+			h3{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 30px;
+				font-weight: lighter;
+			}
+		}
+
+	}
+
+}
+
+section.destaque:hover i{
+	padding: 10px 0 0 0;
+}
+
+
+.box-single:hover:nth-of-type(1){
+	
+	background-size: contain;
+	background-image: url('../imagens/sessoes/sessao1.png');
+	color: transparent !important;
+	transition: 0.5s;
+
+}
+.box-single:hover:nth-of-type(2){
+	
+	background-size: contain;
+	background-image: url('../imagens/sessoes/sessao2.jpg');
+	color: transparent !important;
+	transition: 0.5s;
+}
+.box-single:hover:nth-of-type(3){
+	
+	background-size: contain;
+	background-image: url('../imagens/sessoes/sessao3.png');
+	color: transparent !important;
+	transition: 0.5s;
+	background-repeat: no-repeat;
+}
+
+
+section.section-bg2{
+
+	width: 100%;
+	height: 150px;
+	background-image: url('../imagens/bg/bg2.png');
+	background-position: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+}
+
+
+/* LOJA */
+
+section.loja{
+
+	width: 100%;
+	padding: 0 2%;
+	display: flex;
+
+	.texto{
+
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+
+
+	h2{
+		text-align: center;
+	}
+
+	i{
+		transition: 1s;
+		height: 39px;
+	}
+
+	}
+
+
+	.loja-container{
+		width: 100%;
+		padding: 20px 20px;
+		text-align: center;
+		color: white;
+
+		.loja-single{
+			width: calc(100% / 4);
+			max-width: 200px;
+			min-width: 200px;
+			height: 300px;
+			border-radius: 20px;
+			position: relative;
+			-webkit-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+			display: inline-block;
+			margin: 0 20px 30px 20px;
+			cursor: pointer;
+
+
+			img{max-width: 200px;}
+
+
+
+			.loja-nome{
+				text-align: center;
+				width: 100%;
+				padding: 30px 0;
+				background-color: black;
+				position: absolute;
+				border-radius: 0 0 20px 20px;
+				bottom: 0;
+			}
+			
+		}
+
+	}
+
+	button{
+		
+		padding: 10px 20px;
+		border: 1px solid black;
+		border-radius: 20px;
+		margin: 0 auto;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		font-weight: bold;
+		cursor: pointer;
+		margin-bottom: 50px;
+		background-color: white;
+	}
+
+
+}
+
+
+div.loja-slide{ display: none;}
+
+
+section.loja:hover i{
+	padding: 10px 0 0 0;
+}
+
+button:hover{
+	background-color: rgb(235, 235, 235) !important;
+}
+
+
+/* FOOTER */
+
+footer{
+
+	width: 100%;
+	padding: 5px 0 50px 0;
+	background-color: #424242;
+	position: relative;
+	text-align: center;
+	color: white;
+
+	h2{
+		position: relative;
+		bottom: 20px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+
+
+
+
+
+
+
+
+	.footer2{
+		width: 100%;
+		background-color: #212121;
+		position: absolute;
+		bottom: 0;
+		padding: 15px 2%;
+
+
+		a{color: white;}
+	}
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media screen and (max-width: 1132px){
+
+	section.section-bg{
+	background-image: url('../imagens/bg/NIKE2.png');
+	}
+
+
+	
+
+}
+
+@media screen and (max-width: 768px){
+
+	section.section-bg{
+	background-image: url('../imagens/bg/NIKE3.png');
+
+}
+
+	
+
+	nav.desktop{
+		display: none !important;}
+
+	nav.mobile{
+
+		display: block !important;
+	}
+
+
+	.br{}
+
+}
+
+
+/* SLIDE LOJA */
+
+
+@media screen and (max-width: 600px){
+
+	
+	section.loja > .container{
+		max-width: 350px;
+
+
+	}
+
+	div.off{display: none;}
+
+	div.loja-slide{
+		align-items: center;
+		display: block; 
+		width: 100%;
+		max-width: 420px;
+
+	}
+}
+
+
+/* RESPONSIVO CELULAR */
+
+@media screen and (width: 320px) and (max-height: 568px){
+
+section.diferenciais{
+	
+	width: 100%;
+	padding: 10px 0;
+	background-color: #eeeeee;
+	
+
+	.container{display: flex; position: relative;}
+	
+
+
+		.diferenciais-single{
+			max-width: calc(100% / 1);
+			padding: 60px 2%;
+			margin-left: 49px;
+			margin-right: 50px;	
+		}
+
+		h3{
+			width: 100%;
+		}
+
+
+}
+
+}
